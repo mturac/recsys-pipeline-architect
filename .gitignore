@@ -27,3 +27,6 @@ venv/
 # Build artifacts
 build/
 tmp/
+
+# Agent-skill local install artifacts (from `npx skills add`)
+.agents/
