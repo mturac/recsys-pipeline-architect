@@ -3,7 +3,8 @@
 > A Claude skill for designing composable recommendation, ranking, and feed pipelines — built around the six-stage **Source → Hydrator → Filter → Scorer → Selector → SideEffect** framework popularized by xAI's open-sourced [For You algorithm](https://github.com/xai-org/x-algorithm).
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skill: Claude Code](https://img.shields.io/badge/skill-Claude%20Code-orange.svg)](#installing-the-skill)
+[![Runs on Claude Code](https://img.shields.io/badge/runs%20on-Claude%20Code-orange.svg)](#claude-code)
+[![Runs on Codex CLI](https://img.shields.io/badge/runs%20on-Codex%20CLI-000000.svg)](#codex-cli)
 [![Examples](https://img.shields.io/badge/examples-TypeScript%20%7C%20Go%20%7C%20Python-2ea44f.svg)](#examples)
 [![Pattern: Apache 2.0](https://img.shields.io/badge/pattern%20source-Apache%202.0-lightgrey.svg)](https://github.com/xai-org/x-algorithm)
 [![skills.sh](https://skills.sh/b/mturac/recsys-pipeline-architect)](https://skills.sh/mturac/recsys-pipeline-architect)
@@ -55,15 +56,17 @@ The skill walks you through each stage, surfaces the trade-offs (multi-action vs
 
 ## Installing the skill
 
-### Claude Code
+The `SKILL.md` follows the [agentskills.io](https://agentskills.io) standard and is vendor-agnostic — install it under any agent's skills directory and the trigger keywords in the frontmatter will load it automatically.
 
-One-liner via [skills.sh](https://skills.sh/mturac/recsys-pipeline-architect):
+### One-liner (any supported agent)
+
+Via [skills.sh](https://skills.sh/mturac/recsys-pipeline-architect) — installs to Claude Code, Codex, Cursor, Gemini CLI, Cline, Continue, Windsurf, and more in one shot:
 
 ```bash
 npx skills add mturac/recsys-pipeline-architect
 ```
 
-Or clone directly into your Claude skills folder:
+### Claude Code
 
 ```bash
 mkdir -p ~/.claude/skills/
@@ -78,6 +81,16 @@ Then in a Claude Code session:
 ```
 
 Or just describe a recsys/ranking/feed problem and Claude Code will load the skill via its trigger keywords.
+
+### Codex CLI
+
+```bash
+mkdir -p ~/.codex/skills/
+git clone https://github.com/mturac/recsys-pipeline-architect.git \
+  ~/.codex/skills/recsys-pipeline-architect
+```
+
+Codex auto-discovers skills under `~/.codex/skills/` (and `./.agents/skills/` for repo-local scoping). Describe a recsys/ranking/feed problem in any Codex session and the skill loads via its trigger keywords.
 
 ### Claude.ai (chat)
 
