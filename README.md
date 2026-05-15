@@ -6,6 +6,7 @@
 [![Skill: Claude Code](https://img.shields.io/badge/skill-Claude%20Code-orange.svg)](#installing-the-skill)
 [![Examples](https://img.shields.io/badge/examples-TypeScript%20%7C%20Go%20%7C%20Python-2ea44f.svg)](#examples)
 [![Pattern: Apache 2.0](https://img.shields.io/badge/pattern%20source-Apache%202.0-lightgrey.svg)](https://github.com/xai-org/x-algorithm)
+[![skills.sh](https://skills.sh/b/mturac/recsys-pipeline-architect)](https://skills.sh/mturac/recsys-pipeline-architect)
 
 <p align="center">
   <img src="docs/pipeline.svg" alt="Six-stage recsys pipeline: Source, Hydrator, Filter, Scorer, Selector, SideEffect" width="750">
@@ -55,6 +56,14 @@ The skill walks you through each stage, surfaces the trade-offs (multi-action vs
 ## Installing the skill
 
 ### Claude Code
+
+One-liner via [skills.sh](https://skills.sh/mturac/recsys-pipeline-architect):
+
+```bash
+npx skills add mturac/recsys-pipeline-architect
+```
+
+Or clone directly into your Claude skills folder:
 
 ```bash
 mkdir -p ~/.claude/skills/
