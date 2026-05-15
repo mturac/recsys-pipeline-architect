@@ -8,54 +8,7 @@
 [![Pattern: Apache 2.0](https://img.shields.io/badge/pattern%20source-Apache%202.0-lightgrey.svg)](https://github.com/xai-org/x-algorithm)
 
 <p align="center">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 200" width="100%" role="img" aria-label="Six-stage recsys pipeline: Source, Hydrator, Filter, Scorer, Selector, SideEffect">
-  <text x="375" y="24" text-anchor="middle" style="font:600 14px -apple-system,'Segoe UI',Helvetica,sans-serif;fill:#111827">Six-stage recsys pipeline</text>
-  <text x="375" y="42" text-anchor="middle" style="font:400 11px -apple-system,'Segoe UI',Helvetica,sans-serif;fill:#6b7280">top-K items for any (user, context)</text>
-
-  <rect x="20"  y="70" width="110" height="70" rx="6" style="fill:#eff6ff;stroke:#1f2937;stroke-width:1.5"/>
-  <rect x="140" y="70" width="110" height="70" rx="6" style="fill:#eff6ff;stroke:#1f2937;stroke-width:1.5"/>
-  <rect x="260" y="70" width="110" height="70" rx="6" style="fill:#fefce8;stroke:#1f2937;stroke-width:1.5"/>
-  <rect x="380" y="70" width="110" height="70" rx="6" style="fill:#fefce8;stroke:#1f2937;stroke-width:1.5"/>
-  <rect x="500" y="70" width="110" height="70" rx="6" style="fill:#ecfdf5;stroke:#1f2937;stroke-width:1.5"/>
-  <rect x="620" y="70" width="110" height="70" rx="6" style="fill:#faf5ff;stroke:#1f2937;stroke-width:1.5"/>
-
-  <g style="font:700 11px -apple-system,'Segoe UI',Helvetica,sans-serif;fill:#9ca3af">
-    <text x="30"  y="88">1</text>
-    <text x="150" y="88">2</text>
-    <text x="270" y="88">3</text>
-    <text x="390" y="88">4</text>
-    <text x="510" y="88">5</text>
-    <text x="630" y="88">6</text>
-  </g>
-
-  <g style="font:600 13px -apple-system,'Segoe UI',Helvetica,sans-serif;fill:#111827">
-    <text x="75"  y="106" text-anchor="middle">Source</text>
-    <text x="195" y="106" text-anchor="middle">Hydrator</text>
-    <text x="315" y="106" text-anchor="middle">Filter</text>
-    <text x="435" y="106" text-anchor="middle">Scorer</text>
-    <text x="555" y="106" text-anchor="middle">Selector</text>
-    <text x="675" y="106" text-anchor="middle">SideEffect</text>
-  </g>
-
-  <g style="font:500 10px -apple-system,'Segoe UI',Helvetica,sans-serif;fill:#6b7280">
-    <text x="75"  y="124" text-anchor="middle">parallel</text>
-    <text x="195" y="124" text-anchor="middle">parallel</text>
-    <text x="315" y="124" text-anchor="middle">sequential</text>
-    <text x="435" y="124" text-anchor="middle">sequential</text>
-    <text x="555" y="124" text-anchor="middle">top-K</text>
-    <text x="675" y="124" text-anchor="middle">async</text>
-  </g>
-
-  <g style="fill:#9ca3af">
-    <polygon points="132,102 138,105 132,108"/>
-    <polygon points="252,102 258,105 252,108"/>
-    <polygon points="372,102 378,105 372,108"/>
-    <polygon points="492,102 498,105 492,108"/>
-    <polygon points="612,102 618,105 612,108"/>
-  </g>
-
-  <text x="375" y="172" text-anchor="middle" style="font:400 11px -apple-system,'Segoe UI',Helvetica,sans-serif;fill:#6b7280">candidates flow left → right · side effects fire async, never blocking the response</text>
-</svg>
+  <img src="docs/pipeline.svg" alt="Six-stage recsys pipeline: Source, Hydrator, Filter, Scorer, Selector, SideEffect" width="750">
 </p>
 
 ## Why this exists
